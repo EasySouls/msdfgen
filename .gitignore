@@ -37,5 +37,5 @@ out/
 *.vcxproj.filters
 *.vcxproj.users
 
-freetype/freetype.vcxproj
-freetype/freetype.vcxproj.filters
+*freetype.vcxproj
+*freetype.vcxproj.filters
