@@ -25,7 +25,7 @@ struct BitmapRef {
     int width, height;
     YAxisOrientation yOrientation;
 
-    inline BitmapRef() : pixels(NULL), width(0), height(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
+    inline BitmapRef() : pixels(nullptr), width(0), height(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
     inline BitmapRef(T *pixels, int width, int height, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), yOrientation(yOrientation) { }
 
     inline T *operator()(int x, int y) const {
@@ -51,7 +51,7 @@ struct BitmapConstRef {
     int width, height;
     YAxisOrientation yOrientation;
 
-    inline BitmapConstRef() : pixels(NULL), width(0), height(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
+    inline BitmapConstRef() : pixels(nullptr), width(0), height(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
     inline BitmapConstRef(const T *pixels, int width, int height, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), yOrientation(yOrientation) { }
     inline BitmapConstRef(const BitmapRef<T, N> &orig) : pixels(orig.pixels), width(orig.width), height(orig.height), yOrientation(orig.yOrientation) { }
 
@@ -80,7 +80,7 @@ struct BitmapSection {
     int rowStride;
     YAxisOrientation yOrientation;
 
-    inline BitmapSection() : pixels(NULL), width(0), height(0), rowStride(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
+    inline BitmapSection() : pixels(nullptr), width(0), height(0), rowStride(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
     inline BitmapSection(T *pixels, int width, int height, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), rowStride(N*width), yOrientation(yOrientation) { }
     inline BitmapSection(T *pixels, int width, int height, int rowStride, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), rowStride(rowStride), yOrientation(yOrientation) { }
     inline BitmapSection(const BitmapRef<T, N> &orig) : pixels(orig.pixels), width(orig.width), height(orig.height), rowStride(N*orig.width), yOrientation(orig.yOrientation) { }
@@ -119,7 +119,7 @@ struct BitmapConstSection {
     int rowStride;
     YAxisOrientation yOrientation;
 
-    inline BitmapConstSection() : pixels(NULL), width(0), height(0), rowStride(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
+    inline BitmapConstSection() : pixels(nullptr), width(0), height(0), rowStride(0), yOrientation(MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) { }
     inline BitmapConstSection(const T *pixels, int width, int height, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), rowStride(N*width), yOrientation(yOrientation) { }
     inline BitmapConstSection(const T *pixels, int width, int height, int rowStride, YAxisOrientation yOrientation = MSDFGEN_Y_AXIS_DEFAULT_ORIENTATION) : pixels(pixels), width(width), height(height), rowStride(rowStride), yOrientation(yOrientation) { }
     inline BitmapConstSection(const BitmapRef<T, N> &orig) : pixels(orig.pixels), width(orig.width), height(orig.height), rowStride(N*orig.width), yOrientation(orig.yOrientation) { }

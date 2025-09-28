@@ -3,7 +3,6 @@
 
 #include <cmath>
 #include <cfloat>
-#include "base.h"
 
 namespace msdfgen {
 

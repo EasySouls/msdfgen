@@ -8,6 +8,7 @@ namespace msdfgen {
 #define MSDFGEN_LEGACY_FONT_COORDINATE_SCALE (1/64.)
 
 typedef unsigned unicode_t;
+typedef unsigned char byte;
 
 class FreetypeHandle;
 class FontHandle;

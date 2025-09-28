@@ -5,6 +5,8 @@
 
 #ifndef MSDFGEN_DISABLE_PNG
 
+typedef unsigned char byte;
+
 namespace msdfgen {
 
 /// Saves the bitmap as a PNG file.

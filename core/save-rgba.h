@@ -3,6 +3,8 @@
 
 #include "BitmapRef.hpp"
 
+typedef unsigned char byte;
+
 namespace msdfgen {
 
 /// Saves the bitmap as a simple RGBA file, which can be decoded trivially.

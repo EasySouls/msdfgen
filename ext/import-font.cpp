@@ -12,6 +12,8 @@
 
 namespace msdfgen {
 
+typedef unsigned char byte;
+
 #define F16DOT16_TO_DOUBLE(x) (1/65536.*double(x))
 #define DOUBLE_TO_F16DOT16(x) FT_Fixed(65536.*x)
 

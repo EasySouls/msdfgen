@@ -3,6 +3,8 @@
 
 #include "BitmapRef.hpp"
 
+typedef unsigned char byte;
+
 namespace msdfgen {
 
 /// Saves the bitmap as a BMP file.

@@ -30,3 +30,12 @@ out/
 /build_xcode/
 /cmake-gen.bat
 /line-ending-check.bat
+
+/bin
+/bin-int
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.users
+
+freetype/freetype.vcxproj
+freetype/freetype.vcxproj.filters

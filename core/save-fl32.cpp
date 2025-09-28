@@ -3,6 +3,8 @@
 
 #include <cstdio>
 
+typedef unsigned char byte;
+
 namespace msdfgen {
 
 // Requires byte reversal for floats on big-endian platform

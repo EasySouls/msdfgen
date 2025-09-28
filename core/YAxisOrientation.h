@@ -1,8 +1,6 @@
 
 #pragma once
 
-#include "base.h"
-
 namespace msdfgen {
 
 /// Specifies whether the Y component of the coordinate system increases in the upward or downward direction.

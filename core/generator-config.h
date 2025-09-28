@@ -9,6 +9,8 @@
 
 namespace msdfgen {
 
+typedef unsigned char byte;
+
 /// The configuration of the MSDF error correction pass.
 struct ErrorCorrectionConfig {
     /// The default value of minDeviationRatio.
